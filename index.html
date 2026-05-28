@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+
+    <!-- <div class="logo">Adver Digify</div> -->
+
+    <div class="logo">
+
+  <img src="logo.png" alt="Logo">
+
+  <span>Adver Digify</span>
+
+</div>
+
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+
+      <li>
+        <a href="javascript:void(0)" class="register-btn">
+          Register
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Menu Icon -->
+
+    <div class="menu-icon" id="menuIcon">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </nav>
+
+  <!-- Popup -->
+
+  <div class="login-container" id="registerForm">
+
+    <!-- Register Box -->
+
+    <div class="login-box" id="registerBox">
+
+      <span class="close-btn" id="registerCloseBtn">
+        &times;
+      </span>
+
+      <h2>Register</h2>
+
+      <input
+      type="text"
+      placeholder="Enter Username"
+      id="registerUsername">
+
+      <input
+      type="email"
+      placeholder="Enter Email"
+      id="email">
+
+      <!-- Password Box -->
+
+      <div class="password-box">
+
+        <input
+        type="password"
+        placeholder="Enter Password"
+        id="password">
+
+        <span id="togglePassword">
+          <i class="fa-solid fa-eye"></i>
+        </span>
+
+      </div>
+
+      <button id="registerButton">
+        Register
+      </button>
+
+      <p>
+        Already have an account?
+        <a href="#" id="showLogin">Login</a>
+      </p>
+
+    </div>
+
+    <!-- Login Box -->
+
+    <div
+    class="login-box"
+    id="loginBox"
+    style="display:none;">
+
+      <span class="close-btn" id="loginCloseBtn">
+        &times;
+      </span>
+
+      <h2>Login</h2>
+
+      <input
+      type="text"
+      placeholder="Enter Username"
+      id="loginUsername">
+
+      <!-- Login Password Box -->
+
+      <div class="password-box">
+
+        <input
+        type="password"
+        placeholder="Enter Password"
+        id="loginPassword">
+
+        <span id="toggleLoginPassword">
+          <i class="fa-solid fa-eye"></i>
+        </span>
+
+      </div>
+
+      <button id="loginButton">
+        Login
+      </button>
+
+      <p class="forgot-password">
+        <a href="#" id="forgotPasswordLink">
+    Forgot Password?
+        </a>
+      </p>
+
+    </div>
+
+      <!-- Reset Password Box -->
+
+<div
+class="login-box"
+id="resetBox"
+style="display:none;">
+
+  <span class="close-btn" id="resetCloseBtn">
+    &times;
+  </span>
+
+  <h2>Reset Password</h2>
+
+  <input
+  type="text"
+  placeholder="Enter Username"
+  id="resetUsername">
+
+  <input
+  type="password"
+  placeholder="Enter New Password"
+  id="newPassword">
+
+  <button id="resetButton">
+    Update Password
+  </button>
+
+</div>
+
+  </div>
+
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      Build Your Dream Website
+    </h1>
+
+    <p>
+      Create modern and responsive websites using
+      HTML, CSS and JavaScript.
+    </p>
+
+  </div>
+
+</section>
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
